@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Zhaimi-Medium.ttf">
+            <string>ZhaimiMedium-</string>
+            <string>ZhaimiMedium-</string>
+            <string>ZhaimiMedium-</string>
+            <string>ZhaimiMedium-</string>
+            <string>ZhaimiMedium-</string>
+            <string>ZhaimiMedium-</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iFm-15-Svq" customClass="TZDatePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0X0-it-MKl" userLabel="时间展示">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQp-fa-VBn" userLabel="开始时间">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="85"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw0-lI-alO">
+                                    <rect key="frame" x="30" y="15" width="100" height="30"/>
+                                    <color key="backgroundColor" red="0.36139382645259938" green="0.64460292431192656" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="ZhaimiMedium-" family="Zhaimi Medium" pointSize="14"/>
+                                    <state key="normal" title="开始时间"/>
+                                    <connections>
+                                        <action selector="beginDateBtnClick:" destination="iFm-15-Svq" eventType="touchUpInside" id="dgQ-6K-pBQ"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZZ-Rl-ncS">
+                                    <rect key="frame" x="0.0" y="53" width="160" height="17"/>
+                                    <fontDescription key="fontDescription" name="ZhaimiMedium-" family="Zhaimi Medium" pointSize="14"/>
+                                    <color key="textColor" red="0.21066995660000001" green="0.56077220110000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="2ZZ-Rl-ncS" secondAttribute="bottom" constant="15" id="CfF-Ad-6Fc"/>
+                                <constraint firstAttribute="trailing" secondItem="2ZZ-Rl-ncS" secondAttribute="trailing" id="IeY-Hk-RGT"/>
+                                <constraint firstItem="Zw0-lI-alO" firstAttribute="leading" secondItem="vQp-fa-VBn" secondAttribute="leading" constant="30" id="KSv-4s-n6d"/>
+                                <constraint firstAttribute="trailing" secondItem="Zw0-lI-alO" secondAttribute="trailing" constant="30" id="Pa3-1J-5X5"/>
+                                <constraint firstItem="2ZZ-Rl-ncS" firstAttribute="top" secondItem="Zw0-lI-alO" secondAttribute="bottom" constant="8" id="cqM-Tn-u5r"/>
+                                <constraint firstItem="2ZZ-Rl-ncS" firstAttribute="leading" secondItem="vQp-fa-VBn" secondAttribute="leading" id="fGn-UY-h6A"/>
+                                <constraint firstItem="Zw0-lI-alO" firstAttribute="top" secondItem="vQp-fa-VBn" secondAttribute="top" constant="15" id="y3Q-dK-oN1"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8j-ML-cph" userLabel="结束时间">
+                            <rect key="frame" x="160" y="0.0" width="160" height="85"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ra7-cv-rjn">
+                                    <rect key="frame" x="30" y="15" width="100" height="30"/>
+                                    <color key="backgroundColor" red="0.36139382650000001" green="0.64460292429999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="ZhaimiMedium-" family="Zhaimi Medium" pointSize="14"/>
+                                    <state key="normal" title="结束时间"/>
+                                    <connections>
+                                        <action selector="endDateBtnClick:" destination="iFm-15-Svq" eventType="touchUpInside" id="U49-Dr-KBl"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAC-8V-JXc">
+                                    <rect key="frame" x="0.0" y="53" width="160" height="17"/>
+                                    <fontDescription key="fontDescription" name="ZhaimiMedium-" family="Zhaimi Medium" pointSize="14"/>
+                                    <color key="textColor" red="0.21066995660000001" green="0.56077220110000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="RAC-8V-JXc" firstAttribute="leading" secondItem="c8j-ML-cph" secondAttribute="leading" id="9qy-3H-fOO"/>
+                                <constraint firstAttribute="trailing" secondItem="RAC-8V-JXc" secondAttribute="trailing" id="MZQ-NO-fl0"/>
+                                <constraint firstItem="ra7-cv-rjn" firstAttribute="top" secondItem="c8j-ML-cph" secondAttribute="top" constant="15" id="TlE-RF-Xh9"/>
+                                <constraint firstAttribute="trailing" secondItem="ra7-cv-rjn" secondAttribute="trailing" constant="30" id="ed1-yR-IXu"/>
+                                <constraint firstItem="ra7-cv-rjn" firstAttribute="leading" secondItem="c8j-ML-cph" secondAttribute="leading" constant="30" id="qov-CU-pZV"/>
+                                <constraint firstItem="RAC-8V-JXc" firstAttribute="top" secondItem="ra7-cv-rjn" secondAttribute="bottom" constant="8" id="v9e-uj-35I"/>
+                                <constraint firstAttribute="bottom" secondItem="RAC-8V-JXc" secondAttribute="bottom" constant="15" id="xcc-Tm-1bg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="c8j-ML-cph" secondAttribute="trailing" id="3fo-c0-oti"/>
+                        <constraint firstItem="c8j-ML-cph" firstAttribute="leading" secondItem="vQp-fa-VBn" secondAttribute="trailing" id="Ayz-y9-Aah"/>
+                        <constraint firstAttribute="bottom" secondItem="c8j-ML-cph" secondAttribute="bottom" id="F9D-TO-CsI"/>
+                        <constraint firstItem="c8j-ML-cph" firstAttribute="top" secondItem="0X0-it-MKl" secondAttribute="top" id="MvR-6z-dWD"/>
+                        <constraint firstAttribute="height" constant="85" id="PnU-Fp-9Ee"/>
+                        <constraint firstAttribute="bottom" secondItem="vQp-fa-VBn" secondAttribute="bottom" id="YmB-Tx-ntz"/>
+                        <constraint firstItem="vQp-fa-VBn" firstAttribute="top" secondItem="0X0-it-MKl" secondAttribute="top" id="cC5-tv-vYh"/>
+                        <constraint firstItem="vQp-fa-VBn" firstAttribute="leading" secondItem="0X0-it-MKl" secondAttribute="leading" id="f6s-0c-k1a"/>
+                        <constraint firstItem="vQp-fa-VBn" firstAttribute="width" secondItem="0X0-it-MKl" secondAttribute="width" multiplier="0.5" id="oXg-7n-s2z"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzJ-wT-fLT">
+                    <rect key="frame" x="0.0" y="85" width="320" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmU-xc-xAP">
+                            <rect key="frame" x="15" y="0.0" width="80" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="w1c-IB-emp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ZhaimiMedium-" family="Zhaimi Medium" pointSize="13"/>
+                            <color key="textColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kev-nW-vA3">
+                            <rect key="frame" x="275" y="0.0" width="30" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="RaV-P6-ynV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ZhaimiMedium-" family="Zhaimi Medium" pointSize="14"/>
+                            <state key="normal" title="确定"/>
+                            <connections>
+                                <action selector="okButtonClick:" destination="iFm-15-Svq" eventType="touchUpInside" id="la7-LJ-VUi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="KmU-xc-xAP" firstAttribute="top" secondItem="bzJ-wT-fLT" secondAttribute="top" id="3DO-OE-bt6"/>
+                        <constraint firstItem="Kev-nW-vA3" firstAttribute="top" secondItem="bzJ-wT-fLT" secondAttribute="top" id="MDZ-Hs-tbz"/>
+                        <constraint firstAttribute="trailing" secondItem="Kev-nW-vA3" secondAttribute="trailing" constant="15" id="NiN-4B-MVx"/>
+                        <constraint firstAttribute="bottom" secondItem="Kev-nW-vA3" secondAttribute="bottom" id="WSw-nl-BgQ"/>
+                        <constraint firstAttribute="height" constant="44" id="bL4-CI-9pJ"/>
+                        <constraint firstAttribute="bottom" secondItem="KmU-xc-xAP" secondAttribute="bottom" id="eug-Ni-NId"/>
+                        <constraint firstItem="KmU-xc-xAP" firstAttribute="leading" secondItem="bzJ-wT-fLT" secondAttribute="leading" constant="15" id="j6V-SW-tQ3"/>
+                    </constraints>
+                </view>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q6x-ns-9q2">
+                    <rect key="frame" x="0.0" y="129" width="320" height="165"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="165" id="wPw-3z-S8S"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="469781822.00375402">
+                        <!--2015-11-21 06:57:02 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="410266800">
+                        <!--2014-01-01 11:00:00 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="zh_CN"/>
+                </datePicker>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZP-B0-c17" userLabel="确定按钮">
+                    <rect key="frame" x="0.0" y="294" width="320" height="56"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9H-7s-TFa">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="5Yu-at-aii"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwX-mV-VPO">
+                            <rect key="frame" x="50" y="11" width="220" height="35"/>
+                            <color key="backgroundColor" red="0.49937882262996941" green="0.7356054090214067" blue="0.95784355886850148" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gotoSrceenOrderClick:" destination="iFm-15-Svq" eventType="touchUpInside" id="K8a-jO-Xoi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bwX-mV-VPO" secondAttribute="bottom" constant="10" id="0zo-MI-QdH"/>
+                        <constraint firstAttribute="height" constant="56" id="GJv-i6-piC"/>
+                        <constraint firstAttribute="trailing" secondItem="bwX-mV-VPO" secondAttribute="trailing" constant="50" id="Hbj-1j-3F6"/>
+                        <constraint firstItem="C9H-7s-TFa" firstAttribute="leading" secondItem="uZP-B0-c17" secondAttribute="leading" id="N8i-tw-nna"/>
+                        <constraint firstItem="bwX-mV-VPO" firstAttribute="leading" secondItem="uZP-B0-c17" secondAttribute="leading" constant="50" id="cdA-Qs-c28"/>
+                        <constraint firstItem="bwX-mV-VPO" firstAttribute="top" secondItem="C9H-7s-TFa" secondAttribute="bottom" constant="10" id="hoH-0t-ceh"/>
+                        <constraint firstItem="C9H-7s-TFa" firstAttribute="top" secondItem="uZP-B0-c17" secondAttribute="top" id="mp5-5u-kuS"/>
+                        <constraint firstAttribute="trailing" secondItem="C9H-7s-TFa" secondAttribute="trailing" id="s2L-PQ-97j"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uZP-B0-c17" secondAttribute="bottom" id="2zH-bG-QJH"/>
+                <constraint firstItem="0X0-it-MKl" firstAttribute="leading" secondItem="iFm-15-Svq" secondAttribute="leading" id="9s0-so-Tvf"/>
+                <constraint firstItem="uZP-B0-c17" firstAttribute="top" secondItem="Q6x-ns-9q2" secondAttribute="bottom" id="Fcp-Lq-DpQ"/>
+                <constraint firstItem="0X0-it-MKl" firstAttribute="top" secondItem="iFm-15-Svq" secondAttribute="top" id="Jar-z2-sh9"/>
+                <constraint firstAttribute="trailing" secondItem="Q6x-ns-9q2" secondAttribute="trailing" id="LB4-7P-2Wo"/>
+                <constraint firstItem="bzJ-wT-fLT" firstAttribute="leading" secondItem="iFm-15-Svq" secondAttribute="leading" id="Q1f-Yb-MuL"/>
+                <constraint firstAttribute="trailing" secondItem="0X0-it-MKl" secondAttribute="trailing" id="R9H-W8-ULg"/>
+                <constraint firstItem="uZP-B0-c17" firstAttribute="top" secondItem="Q6x-ns-9q2" secondAttribute="bottom" id="cu1-rd-Q5c"/>
+                <constraint firstItem="uZP-B0-c17" firstAttribute="leading" secondItem="iFm-15-Svq" secondAttribute="leading" id="e9v-er-uY7"/>
+                <constraint firstItem="Q6x-ns-9q2" firstAttribute="top" secondItem="bzJ-wT-fLT" secondAttribute="bottom" id="gws-uI-I3e"/>
+                <constraint firstAttribute="trailing" secondItem="uZP-B0-c17" secondAttribute="trailing" id="i2V-KQ-3h4"/>
+                <constraint firstItem="Q6x-ns-9q2" firstAttribute="width" secondItem="iFm-15-Svq" secondAttribute="width" id="lVx-By-edh"/>
+                <constraint firstAttribute="bottom" secondItem="Q6x-ns-9q2" secondAttribute="bottom" id="p2q-bT-bUr"/>
+                <constraint firstItem="bzJ-wT-fLT" firstAttribute="top" secondItem="0X0-it-MKl" secondAttribute="bottom" id="pxD-nx-gTf"/>
+                <constraint firstItem="Q6x-ns-9q2" firstAttribute="leading" secondItem="iFm-15-Svq" secondAttribute="leading" id="tI0-N2-vou"/>
+                <constraint firstAttribute="trailing" secondItem="bzJ-wT-fLT" secondAttribute="trailing" id="tfs-kD-ssu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="p2q-bT-bUr"/>
+                    <exclude reference="Fcp-Lq-DpQ"/>
+                    <exclude reference="cu1-rd-Q5c"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="beginDateBtn" destination="Zw0-lI-alO" id="q5q-eM-QTK"/>
+                <outlet property="beginDateLable" destination="2ZZ-Rl-ncS" id="VGF-3y-ZaN"/>
+                <outlet property="datePicker" destination="Q6x-ns-9q2" id="Ivq-Os-T5g"/>
+                <outlet property="endDateBtn" destination="ra7-cv-rjn" id="fxh-S0-TG1"/>
+                <outlet property="endDateLable" destination="RAC-8V-JXc" id="hx3-EQ-cCU"/>
+                <outlet property="okBtnToSrceenOrder" destination="bwX-mV-VPO" id="oL1-ci-W4g"/>
+                <outlet property="tipLable" destination="KmU-xc-xAP" id="k9A-cF-TZi"/>
+            </connections>
+            <point key="canvasLocation" x="515" y="387.5"/>
+        </view>
+    </objects>
+</document>

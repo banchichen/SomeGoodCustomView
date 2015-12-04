@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90DEFEE91C071CFC00A61971 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEFEE81C071CFC00A61971 /* main.m */; };
+		90DEFEEC1C071CFC00A61971 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEFEEB1C071CFC00A61971 /* AppDelegate.m */; };
+		90DEFEEF1C071CFC00A61971 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEFEEE1C071CFC00A61971 /* ViewController.m */; };
+		90DEFEF21C071CFC00A61971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DEFEF01C071CFC00A61971 /* Main.storyboard */; };
+		90DEFEF41C071CFC00A61971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DEFEF31C071CFC00A61971 /* Assets.xcassets */; };
+		90DEFEF71C071CFC00A61971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DEFEF51C071CFC00A61971 /* LaunchScreen.storyboard */; };
+		90DEFF021C071CFD00A61971 /* TZPopInputViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEFF011C071CFD00A61971 /* TZPopInputViewTests.m */; };
+		90DEFF0D1C071CFD00A61971 /* TZPopInputViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEFF0C1C071CFD00A61971 /* TZPopInputViewUITests.m */; };
+		90DEFF251C071D5C00A61971 /* TZPopInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEFF231C071D5C00A61971 /* TZPopInputView.m */; };
+		90DEFF261C071D5C00A61971 /* TZPopInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90DEFF241C071D5C00A61971 /* TZPopInputView.xib */; };
+		90E9D97F1C1174420077C92D /* TZDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9D97D1C1174420077C92D /* TZDatePickerView.m */; };
+		90E9D9801C1174420077C92D /* TZDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E9D97E1C1174420077C92D /* TZDatePickerView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90DEFEFE1C071CFD00A61971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90DEFEDC1C071CFC00A61971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90DEFEE31C071CFC00A61971;
+			remoteInfo = TZPopInputView;
+		};
+		90DEFF091C071CFD00A61971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90DEFEDC1C071CFC00A61971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90DEFEE31C071CFC00A61971;
+			remoteInfo = TZPopInputView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		90DEFEE41C071CFC00A61971 /* TZPopInputView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZPopInputView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90DEFEE81C071CFC00A61971 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90DEFEEA1C071CFC00A61971 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		90DEFEEB1C071CFC00A61971 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		90DEFEED1C071CFC00A61971 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		90DEFEEE1C071CFC00A61971 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		90DEFEF11C071CFC00A61971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90DEFEF31C071CFC00A61971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90DEFEF61C071CFC00A61971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90DEFEF81C071CFC00A61971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90DEFEFD1C071CFD00A61971 /* TZPopInputViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TZPopInputViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90DEFF011C071CFD00A61971 /* TZPopInputViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZPopInputViewTests.m; sourceTree = "<group>"; };
+		90DEFF031C071CFD00A61971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90DEFF081C071CFD00A61971 /* TZPopInputViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TZPopInputViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90DEFF0C1C071CFD00A61971 /* TZPopInputViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZPopInputViewUITests.m; sourceTree = "<group>"; };
+		90DEFF0E1C071CFD00A61971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90DEFF221C071D5C00A61971 /* TZPopInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPopInputView.h; sourceTree = "<group>"; };
+		90DEFF231C071D5C00A61971 /* TZPopInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPopInputView.m; sourceTree = "<group>"; };
+		90DEFF241C071D5C00A61971 /* TZPopInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZPopInputView.xib; sourceTree = "<group>"; };
+		90E9D97C1C1174420077C92D /* TZDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZDatePickerView.h; sourceTree = "<group>"; };
+		90E9D97D1C1174420077C92D /* TZDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZDatePickerView.m; sourceTree = "<group>"; };
+		90E9D97E1C1174420077C92D /* TZDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZDatePickerView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90DEFEE11C071CFC00A61971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90DEFEFA1C071CFD00A61971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90DEFF051C071CFD00A61971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90DEFEDB1C071CFC00A61971 = {
+			isa = PBXGroup;
+			children = (
+				90DEFEE61C071CFC00A61971 /* TZPopInputView */,
+				90DEFF001C071CFD00A61971 /* TZPopInputViewTests */,
+				90DEFF0B1C071CFD00A61971 /* TZPopInputViewUITests */,
+				90DEFEE51C071CFC00A61971 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90DEFEE51C071CFC00A61971 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90DEFEE41C071CFC00A61971 /* TZPopInputView.app */,
+				90DEFEFD1C071CFD00A61971 /* TZPopInputViewTests.xctest */,
+				90DEFF081C071CFD00A61971 /* TZPopInputViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90DEFEE61C071CFC00A61971 /* TZPopInputView */ = {
+			isa = PBXGroup;
+			children = (
+				90E9D97B1C1174420077C92D /* TZDatePicker */,
+				90DEFF211C071D5C00A61971 /* TZPopInputView */,
+				90DEFEEA1C071CFC00A61971 /* AppDelegate.h */,
+				90DEFEEB1C071CFC00A61971 /* AppDelegate.m */,
+				90DEFEED1C071CFC00A61971 /* ViewController.h */,
+				90DEFEEE1C071CFC00A61971 /* ViewController.m */,
+				90DEFEF01C071CFC00A61971 /* Main.storyboard */,
+				90DEFEF31C071CFC00A61971 /* Assets.xcassets */,
+				90DEFEF51C071CFC00A61971 /* LaunchScreen.storyboard */,
+				90DEFEF81C071CFC00A61971 /* Info.plist */,
+				90DEFEE71C071CFC00A61971 /* Supporting Files */,
+			);
+			path = TZPopInputView;
+			sourceTree = "<group>";
+		};
+		90DEFEE71C071CFC00A61971 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90DEFEE81C071CFC00A61971 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90DEFF001C071CFD00A61971 /* TZPopInputViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				90DEFF011C071CFD00A61971 /* TZPopInputViewTests.m */,
+				90DEFF031C071CFD00A61971 /* Info.plist */,
+			);
+			path = TZPopInputViewTests;
+			sourceTree = "<group>";
+		};
+		90DEFF0B1C071CFD00A61971 /* TZPopInputViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				90DEFF0C1C071CFD00A61971 /* TZPopInputViewUITests.m */,
+				90DEFF0E1C071CFD00A61971 /* Info.plist */,
+			);
+			path = TZPopInputViewUITests;
+			sourceTree = "<group>";
+		};
+		90DEFF211C071D5C00A61971 /* TZPopInputView */ = {
+			isa = PBXGroup;
+			children = (
+				90DEFF221C071D5C00A61971 /* TZPopInputView.h */,
+				90DEFF231C071D5C00A61971 /* TZPopInputView.m */,
+				90DEFF241C071D5C00A61971 /* TZPopInputView.xib */,
+			);
+			path = TZPopInputView;
+			sourceTree = "<group>";
+		};
+		90E9D97B1C1174420077C92D /* TZDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				90E9D97C1C1174420077C92D /* TZDatePickerView.h */,
+				90E9D97D1C1174420077C92D /* TZDatePickerView.m */,
+				90E9D97E1C1174420077C92D /* TZDatePickerView.xib */,
+			);
+			path = TZDatePicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90DEFEE31C071CFC00A61971 /* TZPopInputView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90DEFF111C071CFD00A61971 /* Build configuration list for PBXNativeTarget "TZPopInputView" */;
+			buildPhases = (
+				90DEFEE01C071CFC00A61971 /* Sources */,
+				90DEFEE11C071CFC00A61971 /* Frameworks */,
+				90DEFEE21C071CFC00A61971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TZPopInputView;
+			productName = TZPopInputView;
+			productReference = 90DEFEE41C071CFC00A61971 /* TZPopInputView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90DEFEFC1C071CFD00A61971 /* TZPopInputViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90DEFF141C071CFD00A61971 /* Build configuration list for PBXNativeTarget "TZPopInputViewTests" */;
+			buildPhases = (
+				90DEFEF91C071CFD00A61971 /* Sources */,
+				90DEFEFA1C071CFD00A61971 /* Frameworks */,
+				90DEFEFB1C071CFD00A61971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90DEFEFF1C071CFD00A61971 /* PBXTargetDependency */,
+			);
+			name = TZPopInputViewTests;
+			productName = TZPopInputViewTests;
+			productReference = 90DEFEFD1C071CFD00A61971 /* TZPopInputViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		90DEFF071C071CFD00A61971 /* TZPopInputViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90DEFF171C071CFD00A61971 /* Build configuration list for PBXNativeTarget "TZPopInputViewUITests" */;
+			buildPhases = (
+				90DEFF041C071CFD00A61971 /* Sources */,
+				90DEFF051C071CFD00A61971 /* Frameworks */,
+				90DEFF061C071CFD00A61971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90DEFF0A1C071CFD00A61971 /* PBXTargetDependency */,
+			);
+			name = TZPopInputViewUITests;
+			productName = TZPopInputViewUITests;
+			productReference = 90DEFF081C071CFD00A61971 /* TZPopInputViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90DEFEDC1C071CFC00A61971 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "谭真";
+				TargetAttributes = {
+					90DEFEE31C071CFC00A61971 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					90DEFEFC1C071CFD00A61971 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 90DEFEE31C071CFC00A61971;
+					};
+					90DEFF071C071CFD00A61971 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 90DEFEE31C071CFC00A61971;
+					};
+				};
+			};
+			buildConfigurationList = 90DEFEDF1C071CFC00A61971 /* Build configuration list for PBXProject "TZPopInputView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90DEFEDB1C071CFC00A61971;
+			productRefGroup = 90DEFEE51C071CFC00A61971 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90DEFEE31C071CFC00A61971 /* TZPopInputView */,
+				90DEFEFC1C071CFD00A61971 /* TZPopInputViewTests */,
+				90DEFF071C071CFD00A61971 /* TZPopInputViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90DEFEE21C071CFC00A61971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90DEFF261C071D5C00A61971 /* TZPopInputView.xib in Resources */,
+				90DEFEF71C071CFC00A61971 /* LaunchScreen.storyboard in Resources */,
+				90DEFEF41C071CFC00A61971 /* Assets.xcassets in Resources */,
+				90DEFEF21C071CFC00A61971 /* Main.storyboard in Resources */,
+				90E9D9801C1174420077C92D /* TZDatePickerView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90DEFEFB1C071CFD00A61971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90DEFF061C071CFD00A61971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90DEFEE01C071CFC00A61971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E9D97F1C1174420077C92D /* TZDatePickerView.m in Sources */,
+				90DEFF251C071D5C00A61971 /* TZPopInputView.m in Sources */,
+				90DEFEEF1C071CFC00A61971 /* ViewController.m in Sources */,
+				90DEFEEC1C071CFC00A61971 /* AppDelegate.m in Sources */,
+				90DEFEE91C071CFC00A61971 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90DEFEF91C071CFD00A61971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90DEFF021C071CFD00A61971 /* TZPopInputViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90DEFF041C071CFD00A61971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90DEFF0D1C071CFD00A61971 /* TZPopInputViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90DEFEFF1C071CFD00A61971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90DEFEE31C071CFC00A61971 /* TZPopInputView */;
+			targetProxy = 90DEFEFE1C071CFD00A61971 /* PBXContainerItemProxy */;
+		};
+		90DEFF0A1C071CFD00A61971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90DEFEE31C071CFC00A61971 /* TZPopInputView */;
+			targetProxy = 90DEFF091C071CFD00A61971 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90DEFEF01C071CFC00A61971 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90DEFEF11C071CFC00A61971 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90DEFEF51C071CFC00A61971 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90DEFEF61C071CFC00A61971 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90DEFF0F1C071CFD00A61971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		90DEFF101C071CFD00A61971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90DEFF121C071CFD00A61971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TZPopInputView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tanzhen.TZPopInputView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		90DEFF131C071CFD00A61971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TZPopInputView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tanzhen.TZPopInputView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		90DEFF151C071CFD00A61971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TZPopInputViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tanzhen.TZPopInputViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TZPopInputView.app/TZPopInputView";
+			};
+			name = Debug;
+		};
+		90DEFF161C071CFD00A61971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TZPopInputViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tanzhen.TZPopInputViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TZPopInputView.app/TZPopInputView";
+			};
+			name = Release;
+		};
+		90DEFF181C071CFD00A61971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TZPopInputViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tanzhen.TZPopInputViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TZPopInputView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		90DEFF191C071CFD00A61971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TZPopInputViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tanzhen.TZPopInputViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TZPopInputView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90DEFEDF1C071CFC00A61971 /* Build configuration list for PBXProject "TZPopInputView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90DEFF0F1C071CFD00A61971 /* Debug */,
+				90DEFF101C071CFD00A61971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90DEFF111C071CFD00A61971 /* Build configuration list for PBXNativeTarget "TZPopInputView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90DEFF121C071CFD00A61971 /* Debug */,
+				90DEFF131C071CFD00A61971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90DEFF141C071CFD00A61971 /* Build configuration list for PBXNativeTarget "TZPopInputViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90DEFF151C071CFD00A61971 /* Debug */,
+				90DEFF161C071CFD00A61971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90DEFF171C071CFD00A61971 /* Build configuration list for PBXNativeTarget "TZPopInputViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90DEFF181C071CFD00A61971 /* Debug */,
+				90DEFF191C071CFD00A61971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90DEFEDC1C071CFC00A61971 /* Project object */;
+}
