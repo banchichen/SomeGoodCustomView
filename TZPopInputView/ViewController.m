@@ -9,13 +9,15 @@
 #import "ViewController.h"
 #import "TZPopInputView.h"
 #import "TZDatePickerView.h"
+#import "TZTimePickerView.h"
 
 #define mScreenWidth   ([UIScreen mainScreen].bounds.size.width)
 #define mScreenHeight  ([UIScreen mainScreen].bounds.size.height)
 
 @interface ViewController ()
 @property (nonatomic, strong) TZPopInputView *inputView;    // 输入框
-@property (nonatomic, strong) TZDatePickerView *datePicker; // 时间选择器
+@property (nonatomic, strong) TZDatePickerView *datePicker; // 日期选择器
+@property (nonatomic, strong) TZTimePickerView *timePicker; // 时间选择器
 @end
 
 @implementation ViewController
@@ -23,12 +25,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 创建三个button + 一个button
-    [self createButtonWithY:100 title:@"一行输入框  手机号" tag:0];
-    [self createButtonWithY:160 title:@"两行输入框  测  试" tag:1];
-    [self createButtonWithY:220 title:@"三行输入框  支付宝" tag:2];
+    // 创建三个button + 一个button + 一个button
+    [self createButtonWithY:100 title:@"1.1 一行输入框  手机号" tag:0];
+    [self createButtonWithY:160 title:@"1.2 两行输入框  测试的" tag:1];
+    [self createButtonWithY:220 title:@"1.3 三行输入框  支付宝" tag:2];
+
+    [self createButtonWithY:320 title:@"2. 日期选择器  选日期" tag:3];
     
-    [self createButtonWithY:400 title:@"时间选择器  测  试" tag:3];
+    [self createButtonWithY:420 title:@"3. 时间选择器  选时间" tag:4];
 }
 
 /* 
@@ -41,6 +45,9 @@
     }
     if (!_datePicker) {
         self.datePicker = [[TZDatePickerView alloc] init];
+    }
+    if (!_timePicker) {
+        self.timePicker = [[TZTimePickerView alloc] init];
     }
 }
 
@@ -68,8 +75,11 @@
         case 2: // 三行输入框
             [self showInputViewType3];
             break;
-        case 3: // 时间选择器
+        case 3: // 日期选择器
             [self showDatePicker];
+            break;
+        case 4: // 时间选择器
+            [self showTimePicker];
             break;
         default:
             break;
@@ -135,8 +145,24 @@
 /** 显示时间选择器 */
 - (void)showDatePicker {
     [self.datePicker show];
+    
+    __weak typeof(self) weakSelf = self;
     self.datePicker.gotoSrceenOrderBlock = ^(NSString *beginDateStr,NSString *endDateStr){
-        
+        [weakSelf.datePicker hide];
+    };
+}
+
+#pragma mark timePicker相关
+
+/* tip: timePicker的回调block，返回的数据，分别是用户选择的日期string、时间string。*/
+
+/** 显示时间选择器 */
+- (void)showTimePicker {
+    [self.timePicker show];
+    
+    __weak typeof(self) weakSelf = self;
+    self.timePicker.okBtnClickBlock = ^(NSString *dateStr,NSString *timeStr){
+        [weakSelf.timePicker hide];
     };
 }
 

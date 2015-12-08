@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90D7E3A51C16BBAD000997A1 /* TZTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D7E3A31C16BBAD000997A1 /* TZTimePickerView.m */; };
+		90D7E3A61C16BBAD000997A1 /* TZTimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90D7E3A41C16BBAD000997A1 /* TZTimePickerView.xib */; };
 		90DEFEE91C071CFC00A61971 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEFEE81C071CFC00A61971 /* main.m */; };
 		90DEFEEC1C071CFC00A61971 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEFEEB1C071CFC00A61971 /* AppDelegate.m */; };
 		90DEFEEF1C071CFC00A61971 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEFEEE1C071CFC00A61971 /* ViewController.m */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90D7E3A21C16BBAD000997A1 /* TZTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTimePickerView.h; sourceTree = "<group>"; };
+		90D7E3A31C16BBAD000997A1 /* TZTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTimePickerView.m; sourceTree = "<group>"; };
+		90D7E3A41C16BBAD000997A1 /* TZTimePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZTimePickerView.xib; sourceTree = "<group>"; };
 		90DEFEE41C071CFC00A61971 /* TZPopInputView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZPopInputView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DEFEE81C071CFC00A61971 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90DEFEEA1C071CFC00A61971 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90D7E3A11C16BBAD000997A1 /* TZTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				90D7E3A21C16BBAD000997A1 /* TZTimePickerView.h */,
+				90D7E3A31C16BBAD000997A1 /* TZTimePickerView.m */,
+				90D7E3A41C16BBAD000997A1 /* TZTimePickerView.xib */,
+			);
+			path = TZTimePicker;
+			sourceTree = "<group>";
+		};
 		90DEFEDB1C071CFC00A61971 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +126,7 @@
 		90DEFEE61C071CFC00A61971 /* TZPopInputView */ = {
 			isa = PBXGroup;
 			children = (
+				90D7E3A11C16BBAD000997A1 /* TZTimePicker */,
 				90E9D97B1C1174420077C92D /* TZDatePicker */,
 				90DEFF211C071D5C00A61971 /* TZPopInputView */,
 				90DEFEEA1C071CFC00A61971 /* AppDelegate.h */,
@@ -279,6 +295,7 @@
 				90DEFEF71C071CFC00A61971 /* LaunchScreen.storyboard in Resources */,
 				90DEFEF41C071CFC00A61971 /* Assets.xcassets in Resources */,
 				90DEFEF21C071CFC00A61971 /* Main.storyboard in Resources */,
+				90D7E3A61C16BBAD000997A1 /* TZTimePickerView.xib in Resources */,
 				90E9D9801C1174420077C92D /* TZDatePickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D7E3A51C16BBAD000997A1 /* TZTimePickerView.m in Sources */,
 				90E9D97F1C1174420077C92D /* TZDatePickerView.m in Sources */,
 				90DEFF251C071D5C00A61971 /* TZPopInputView.m in Sources */,
 				90DEFEEF1C071CFC00A61971 /* ViewController.m in Sources */,
