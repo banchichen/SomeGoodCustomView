@@ -20,21 +20,6 @@
 
 @implementation ViewController
 
-/** 懒加载 */
-- (TZPopInputView *)inputView {
-    if (_inputView == nil) {
-        _inputView = [[TZPopInputView alloc] init];
-    }
-    return _inputView;
-}
-
-- (TZDatePickerView *)datePicker {
-    if (_datePicker == nil) {
-        _datePicker = [[TZDatePickerView alloc] init];
-    }
-    return _datePicker;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -44,6 +29,19 @@
     [self createButtonWithY:220 title:@"三行输入框  支付宝" tag:2];
     
     [self createButtonWithY:400 title:@"时间选择器  测  试" tag:3];
+}
+
+/* 
+  之前是用懒加载的方式初始化inputView和datePicker，发现会有一定时间的延迟，约60ms，故将初始化方法在这里调用，这样则一点击按钮控件就能弹出来。
+ */
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if (!_inputView) {
+        self.inputView = [[TZPopInputView alloc] init];
+    }
+    if (!_datePicker) {
+        self.datePicker = [[TZDatePickerView alloc] init];
+    }
 }
 
 /** 创建button的方法 */

@@ -138,7 +138,7 @@
     // 重置输入框
     [self resetTextFiled];
     
-    // 特殊设置,修改支付宝情况下，textFiled1不可编辑。
+    // 在这里可以 根据标题的不同 加入一些特殊设置。比如：修改支付宝情况下，textFiled1不可编辑。
     self.textFiled1.enabled = [self.titleLable.text containsString:@"修改支付宝"] ? NO : YES;
     
     // 延迟0.2秒，等View显示出来后，再激活键盘
