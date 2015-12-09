@@ -1,9 +1,8 @@
 # SomeGoodCustomView
 
-## 一. 简介：
   里面目前共三个自定义控件，封装性较好，使用方法较友好。也欢迎大家把自己封装的好控件拿出来，一起分享和学习。详见Demo，欢迎批评指正。
 
-## 二. 时间选择器使用和界面效果
+## 一. 时间选择器
 
   * 代码。先调用show方法，再定义回调block。
   
@@ -13,7 +12,7 @@
   
  ![image](https://github.com/banchichen/SomeGoodCustomView/blob/master/Screenshots/timePicker_screenshots.png) 
   
-## 三. 多行输入框使用和界面效果
+## 二. 多行输入框
 
   * 代码。设置数据，调用show方法，定义回调block。
   
@@ -23,7 +22,7 @@
   
   ![image](https://github.com/banchichen/SomeGoodCustomView/blob/master/Screenshots/inputView_screenshots.png) 
   
-## 四. 日期选择器使用和界面效果
+## 三. 日期选择器
 
   * 代码。先调用show方法，再定义回调block。
   
