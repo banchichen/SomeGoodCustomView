@@ -6,6 +6,8 @@
 //  Copyright © 2015年 上海千叶网络科技有限公司. All rights reserved.
 //  时间选择器（开始时间和结束时间）
 
+/* 写该控件时的应用场景是：用户选择起始时间去筛选订单，故一些命名与筛选订单有关 */
+
 #import "TZDatePickerView.h"
 
 #define mScreenWidth   ([UIScreen mainScreen].bounds.size.width)

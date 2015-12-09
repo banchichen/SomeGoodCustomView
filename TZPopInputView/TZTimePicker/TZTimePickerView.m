@@ -169,8 +169,8 @@
     if (timeInt >= 1330) { [arr addObject:@"0"]; } else { [arr addObject:@"1"]; };
     if (timeInt >= 1430) { [arr addObject:@"0"]; } else { [arr addObject:@"1"]; };
     if (timeInt >= 1530) { [arr addObject:@"0"]; } else { [arr addObject:@"1"]; };
-    if (timeInt >= 1840) { [arr addObject:@"0"]; } else { [arr addObject:@"1"]; };
-    if (timeInt >= 1930) { [arr addObject:@"0"]; } else { [arr addObject:@"1"]; };
+    if (timeInt >= 1630) { [arr addObject:@"0"]; } else { [arr addObject:@"1"]; };
+    if (timeInt >= 1830) { [arr addObject:@"0"]; } else { [arr addObject:@"1"]; };
    
     // 替换数据
     self.allDaysArr[0] = arr;
