@@ -40,15 +40,17 @@
  */
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if (!_inputView) {
-        self.inputView = [[TZPopInputView alloc] init];
-    }
-    if (!_datePicker) {
-        self.datePicker = [[TZDatePickerView alloc] init];
-    }
-    if (!_timePicker) {
-        self.timePicker = [[TZTimePickerView alloc] init];
-    }
+    if (!_inputView)  self.inputView = [[TZPopInputView alloc] init];
+    if (!_datePicker) self.datePicker = [[TZDatePickerView alloc] init];
+    if (!_timePicker) self.timePicker = [[TZTimePickerView alloc] init];
+}
+
+/** 一定要记得在这里移除，因为是加在window上的，否则会造成内存泄露  */
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    if (_inputView)  [self.inputView removeFromSuperview];
+    if (_datePicker) [self.datePicker removeFromSuperview];
+    if (_timePicker) [self.timePicker removeFromSuperview];
 }
 
 /** 创建button的方法 */
